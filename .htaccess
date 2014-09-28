@@ -1,0 +1,10 @@
+Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^.*(\.htm|\.xml|\.css|\.js|\.gif|\.png|\.jpg|\.jpeg|\.GIF|\.PNG|\.JPG|\.JPEG|\.DAT|\.dat|\.php)$|.*(statics).*|.*(upload).*
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index.php

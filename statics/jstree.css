@@ -1,0 +1,208 @@
+@CHARSET "UTF-8";
+div .left{
+	width:30%;
+	min-height:600px;
+	float:left;
+	border:1px solid gray;
+	margin:5px 10px;
+}
+
+div .right{
+	width:65%;
+	float:right;
+	margin:5px 10px;
+	min-height:600px;
+}
+
+
+.tree {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.tree li {
+    white-space: nowrap;
+}
+.tree li ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tree-node {
+    cursor: pointer;
+    height: 18px;
+    white-space: nowrap;
+}
+.tree-hit {
+    cursor: pointer;
+}
+.tree-expanded, .tree-collapsed, .tree-folder, .tree-file, .tree-checkbox, .tree-indent {
+    display: inline-block;
+    height: 18px;
+    overflow: hidden;
+    vertical-align: top;
+    width: 16px;
+}
+.tree-expanded {
+    background: url("images/tree_icons.png") no-repeat scroll -18px 0 rgba(0, 0, 0, 0);
+}
+.tree-expanded-hover {
+    background: url("images/tree_icons.png") no-repeat scroll -50px 0 rgba(0, 0, 0, 0);
+}
+.tree-collapsed {
+    background: url("images/tree_icons.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.tree-collapsed-hover {
+    background: url("images/tree_icons.png") no-repeat scroll -32px 0 rgba(0, 0, 0, 0);
+}
+.tree-lines .tree-expanded, .tree-lines .tree-root-first .tree-expanded {
+    background: url("images/tree_icons.png") no-repeat scroll -144px 0 rgba(0, 0, 0, 0);
+}
+.tree-lines .tree-collapsed, .tree-lines .tree-root-first .tree-collapsed {
+    background: url("images/tree_icons.png") no-repeat scroll -128px 0 rgba(0, 0, 0, 0);
+}
+.tree-lines .tree-node-last .tree-expanded, .tree-lines .tree-root-one .tree-expanded {
+    background: url("images/tree_icons.png") no-repeat scroll -80px 0 rgba(0, 0, 0, 0);
+}
+.tree-lines .tree-node-last .tree-collapsed, .tree-lines .tree-root-one .tree-collapsed {
+    background: url("images/tree_icons.png") no-repeat scroll -64px 0 rgba(0, 0, 0, 0);
+}
+.tree-line {
+    background: url("images/tree_icons.png") no-repeat scroll -176px 0 rgba(0, 0, 0, 0);
+}
+.tree-join {
+    background: url("images/tree_icons.png") no-repeat scroll -192px 0 rgba(0, 0, 0, 0);
+}
+.tree-joinbottom {
+    background: url("images/tree_icons.png") no-repeat scroll -160px 0 rgba(0, 0, 0, 0);
+}
+.tree-folder {
+    background: url("images/tree_icons.png") no-repeat scroll -208px 0 rgba(0, 0, 0, 0);
+}
+.tree-folder-open {
+    background: url("images/tree_icons.png") no-repeat scroll -224px 0 rgba(0, 0, 0, 0);
+}
+.tree-file {
+    background: url("images/tree_icons.png") no-repeat scroll -240px 0 rgba(0, 0, 0, 0);
+}
+.tree-loading {
+    background: url("images/loading.gif") no-repeat scroll center center rgba(0, 0, 0, 0);
+}
+.tree-checkbox0 {
+    background: url("images/tree_icons.png") no-repeat scroll -208px -18px rgba(0, 0, 0, 0);
+}
+.tree-checkbox1 {
+    background: url("images/tree_icons.png") no-repeat scroll -224px -18px rgba(0, 0, 0, 0);
+}
+.tree-checkbox2 {
+    background: url("images/tree_icons.png") no-repeat scroll -240px -18px rgba(0, 0, 0, 0);
+}
+.tree-title {
+    display: inline-block;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 2px;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.tree-node-proxy {
+    border-style: solid;
+    border-width: 1px;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 2px 0 20px;
+    z-index: 9900000;
+}
+.tree-dnd-icon {
+    display: inline-block;
+    height: 18px;
+    left: 2px;
+    margin-top: -9px;
+    position: absolute;
+    top: 50%;
+    width: 16px;
+}
+.tree-dnd-yes {
+    background: url("images/tree_icons.png") no-repeat scroll -256px 0 rgba(0, 0, 0, 0);
+}
+.tree-dnd-no {
+    background: url("images/tree_icons.png") no-repeat scroll -256px -18px rgba(0, 0, 0, 0);
+}
+.tree-node-top {
+    border-top: 1px dotted #FF0000;
+}
+.tree-node-bottom {
+    border-bottom: 1px dotted #FF0000;
+}
+.tree-node-append .tree-title {
+    border: 1px dotted #FF0000;
+}
+.tree-editor {
+    border: 1px solid #CCCCCC;
+    font-size: 12px;
+    height: 14px !important;
+    line-height: 14px;
+    padding: 1px 2px;
+    position: absolute;
+    top: 0;
+    width: 80px;
+}
+.tree-node-proxy {
+    background-color: #FFFFFF;
+    border-color: #95B8E7;
+    color: #000000;
+}
+.tree-node-hover {
+    background: none repeat scroll 0 0 #EAF2FF;
+    color: #000000;
+}
+.tree-node-selected {
+    background: none repeat scroll 0 0 #FBEC88;
+    color: #000000;
+}
+
+#save{
+	border-bottom:1px dashed gray;
+}
+
+.delconfig{
+	background-color:#BBDDE5;
+	border:1px solid black;
+	margin-right:10px;
+	padding:3px 10px;
+	font-size:12px;
+	color:black;
+	cursor:pointer;	
+}
+.insertpic{
+	background-color:#BBDDE5;
+	border:1px solid black;
+	margin-right:10px;
+	padding:3px 10px;
+	font-size:12px;
+	color:black;
+	cursor:pointer;	
+}
+.tool_bar{
+	border-top:1px dashed #BBDDE5;
+	width:100%;
+	text-align:right;
+	padding-top:15px;
+}
+.tool_bar span{
+ 	background-color:#BBDDE5;
+	border:1px solid black;
+	margin-left:10px;
+	padding:3px 10px;
+	font-size:12px;
+	color:red;
+	cursor:pointer;
+}
+#clontr{display:none;}
+.spanhins{
+	text-align:left;
+	color:red;
+}
